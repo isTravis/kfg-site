@@ -21,7 +21,14 @@
 				line-height: 1.2;
 				margin: 1.25em 0em 0.25em;
 			}
-			
+			.background-wrapper {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				overflow: hidden;
+				height: 300px;
+			}
 			.background {
 				background: #2199A1;
 				height: 300px;
@@ -40,7 +47,9 @@
 		<link rel="icon" type="image/png" sizes="256x256" href="/favicon.png"/>
 	</head>
 	<body>
-		<div class="background"></div>
+		<div class="background-wrapper">
+			<div class="background"></div>
+		</div>
 		<div class="header">
 			<img src="/logo.png" alt="Knowledge Futures Group Logo" />
 		</div>
