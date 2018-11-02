@@ -1,181 +1,327 @@
 <html lang="en">
-	<head>
-		<meta charSet="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>Knowledge Futures Group</title>
-		<style>
-			html {
-				background: #F4F4EE;
-			}
-			body {
-				margin: 20px auto;
-				max-width: 800px;
-				line-height: 1.6;
-				font-size: 20px;
-				color: #444;
-				padding: 0 10px;
-				font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
-			}
+<head>
+	<meta charSet="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Knowledge Futures Group</title>
+	<style>
+	html {
+		background: #F4F4EE;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		line-height: 1.6;
+		font-size: 20px;
+		color: #444;
+		font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+	}
 
-			h1,h2,h3 {
-				line-height: 1.2;
-				margin: 1.25em 0em 0.25em;
-			}
-			.background-wrapper {
-				position: absolute;
-				left: 0;
-				top: 0;
-				right: 0;
-				overflow: hidden;
-				height: 300px;
-			}
-			.background {
-				background: #2199A1;
-				height: 300px;
-				position: absolute;
-				left: -50px;
-				right: -50px;
-				top: -75px;
-				transform: rotate(5deg);
-				z-index: -1;
-			}
-			.header img {
-				height: 100px;
-				margin-bottom: 150px;
-			}
-		</style>
-		<link rel="icon" type="image/png" sizes="256x256" href="/favicon.png"/>
-	</head>
-	<body>
-		<div class="background-wrapper">
-			<div class="background"></div>
+	.container {
+		margin: auto;
+		max-width: 800px;
+		padding: 0 10px;
+	}
+
+	h1,h2,h3 {
+		line-height: 1.2;
+		margin: 1.25em 0em 0.25em;
+	}
+	.background-wrapper {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		overflow: hidden;
+		height: 362px;
+	}
+	.background-wrapper.bottom {
+		position: absolute;
+		top: auto;
+		bottom: 0;
+	}
+	.background {
+		background: #2199A1;
+		height: 362px;
+		position: absolute;
+		left: -50px;
+		right: -50px;
+		top: -100px;
+		transform: rotate(3deg);
+		z-index: -1;
+	}
+	.background-wrapper.bottom .background {
+		background: #fff;
+		top: auto;
+		bottom: -100px;
+		transform: rotate(-3deg);
+	}
+	.header img {
+		height: 100px;
+		margin-bottom: 150px;
+		margin-top: 20px;
+	}
+	.button-container {
+		margin: 3em 0;
+	}
+	.button {
+		padding: 1em;
+		background-color: #2199A1;
+		color: #fff;
+		text-decoration: none;
+		margin-bottom: 1em;
+	}
+	.button:hover {
+		background-color: #9df7db;
+		color: #999;
+	}
+	.product {
+		width: 100%;
+		height: auto;
+		margin: 0.5em 0;
+	}
+	.image-grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.image-grid > img {
+		margin: 1em;
+		width: auto;
+	}
+	.image-grid.supporters > img {
+		height: 75px;
+	}
+	.image-grid.mit > img {
+		height: 200px;
+	}
+	.people {
+		margin-bottom: 4em;
+	}
+	.person {
+		clear: both;
+		overflow: hidden;
+		margin: 1em 0;
+		margin-bottom: -50px;
+		z-index: 1;
+		position: relative;
+		opacity: 0.5;
+	}
+	.person:hover {
+		z-index: 10;
+		opacity: 1;
+	}
+	.avatar {
+		width: 75px;
+		height: auto;
+		float: left;
+		border-radius: 100px;
+		margin-right: 1em;
+	}
+	.person:nth-of-type(odd) {
+		padding-left: 20px;
+	}
+	.info {
+		margin-top: 25px;
+		overflow: hidden;
+	}
+	.name, .title {
+		margin: auto 5px auto 0;
+		padding: 0;
+		line-height: 1em;
+		float: left;
+	}
+	.name {
+		font-weight: bold;
+	}
+	</style>
+	<link rel="icon" type="image/png" sizes="256x256" href="/favicon.png"/>
+</head>
+<body>
+	<div class="background-wrapper">
+		<div class="background"></div>
+	</div>
+	<div class="container">
+	<div class="header">
+		<img src="/logo.png" alt="Knowledge Futures Group Logo" />
+	</div>
+		<h2>About the Group</h2>
+		<p>The integrity of knowledge creation – and, with it, how we make sense of the world –
+			depends on how effectively we can combat the spread of misinformation and democratize access to trustworthy,
+			verifiable sources of information to stimulate progress in all areas of human activity.
+			Open access to research information is of fundamental importance in this democratization effort,
+			as is the commitment on the part of research and publishing communities to peer review and other methods of
+			promoting the trustworthiness and reproducibility of research outputs. At the same time, we must devise smarter,
+			more fool-proof ways of filtering for truth and discerning the provenance of the information we consume.</p>
+
+			<p>The <strong>MIT Knowledge Futures Group</strong> (KFG) is a new joint initiative of the MIT Press and the MIT Media Lab
+				and is supported by generous funding from Reid Hoffman, co-founder of LinkedIn and a member of the MIT Media Lab’s
+				Advisory Council. <span style="line-height:115%"><span style="font-family:&quot;Times New Roman&quot;,serif"> </span></span>
+				The KFG’s mission is to transform research publishing from a closed, sequential process, into an open, community-driven one,
+				by incubating and deploying open source technologies to support both rapid, open dissemination and a shared ecosystem
+				for information review, provenance, and verification. The partnership is the first of its kind between an established
+				publisher and a world-class academic lab devoted to the design of future-facing technologies.</p>
+
+			<div class="button-container"><a class="button" href="http://eepurl.com/dCXx0T" target="_blank">Subscribe to the KFG Newsletter</a></div>
+
+			<h3>Rationale</h3>
+			<p>In order for mission driven publishers to flourish into the future, it is imperative that we establish our own innovation pathways.
+				At the same time, universities must assert greater ownership and influence over the ecosystems for sharing and
+				verifying knowledge given how critical it is to their core mission. The development of open source alternatives
+				to the stranglehold that a few commercial entities now have on not the markets for information,
+				reputation systems, publishing technologies, and digital innovation will benefit the
+				research community and the reading public alike.</p>
+
+			<h3>Objective</h3>
+			<p>The KFG will serve as a test kitchen, incubator, and a staging platform for the development and launch of open source
+				publishing technologies and aligned open access publications, staffed jointly by the Press and the Media Lab.
+				The open source approach not only reduces the precarious dependency that most non-profit academic publishers
+				have on costly outsourced technologies and a limited network of commercial vendors, but also provides a
+				foundation for greater insourced experimentation and innovation. We are seeking funding partners to help us
+				strengthen our capacity over the next two to three years, as we develop models that will make the group's work
+				self-sustaining.</p>
+
+			<h3>Partnership</h3>
+			<p>The MIT Press and the Media Lab have a long history of collaboration, beginning with renowned designer
+				<a href="https://mitpress.mit.edu/books/muriel-cooper">Muriel Cooper</a>,
+				who was the Press’ first art director and later a founding faculty member of the Media Lab. Both Press and Lab
+				reflect the values of MIT, an institution that places a premium on experimentation, invention, and open
+				information access. Since its launch in 1962, the MIT Press has been changing the rules of engagement between
+				academic authors and their readers. The Press was one of the first publishers to exploit the potential of the
+				Internet, producing open access interactive books as early as the mid-1990s. From its inception in 1985, the
+				Media Lab was at the vanguard of the technology that enabled the digital revolution and enhanced human expression.
+				Now in its fourth decade, the Lab continues to check traditional disciplines at the door as designers,
+				nanotechnologists, data visualization experts, biologists, and computer interface pioneers work side by side to
+				reinvent the human-technology relationship.</p>
+
+			<h2>Current Projects</h2>
+
+			<h3><a href="https://pubpub.org" target="_blank">PubPub</a>&nbsp;(<a href="http://eepurl.com/dyRqBr" target="_blank">stay in touch</a>)</h3>
+			<a href="https://pubpub.org"><img src="pubpub.png" class="product"></a>
+			<p>PubPub is an open authoring and publishing platform initially developed as a Media Lab project.
+				It socializes the process of knowledge creation by integrating conversation, annotation, and versioning into short and long-form digital publication.
+				Among the books now on PubPub is <a href="https://www.frankenbook.org/" title="Frankenbook">Frankenbook</a>, an interactive edition of Frankenstein: Annotated for Scientists, Engineers, and Creators of All Kinds (MIT Press, 2017).
+				Community contributed annotations on the platform live alongside multimedia elements and a series of essays; classrooms and reading groups are encouraged to create their own digital edition to host private discussions and manage assignments.
+				Also on PubPub is the <a href="https://jods.mitpress.mit.edu/" title="The Journal of Design and Science">Journal of Design and Science</a> (JoDS),
+				which forges new connections between science and design and breaks down the barriers between traditional academic disciplines.
+				We see JoDS as a node in a global network of online debate and discussion rooted in the Media Lab’s research and design ethos.</p>
+
+				<h3><a href="https://underlay.mit.edu/" target="_blank" title="The Underlay">The Underlay Project</a>&nbsp;(<a href="http://eepurl.com/dH-XLT" target="_blank">stay in touch</a>)</h3>
+				<a href="https://underlay.mit.edu"><img src="underlay.png" class="product"></a>
+				<p>The Underlay is a planned protocol and set of tools to connect and archive publicly available knowledge, and its provenance.
+					The Underlay provides mechanisms for distilling a knowledge graph from open publications, for instance making the data
+					and content hosted on PubPub broadly archived and available to other platforms.
+				</p>
+
+				<h3><a href="https://priorartarchive.org">Prior Art Archive</a></h3>
+				<a href="https://priorartarchive.org"><img src="priorart.png" class="product"></a>
+				<p>One of the first projects using the Underlay, the <a href="https://www.priorartarchive.org/about">Prior Art Archive</a> is a public archive of prior art with machine-readable metadata,
+				hosted by MIT and indexed by Google Patents.</p>
+
+				<h2>Supporters</h2>
+
+				<div class="image-grid supporters">
+					<img src="/Siegel_Family_Endowment.png" width="180px" alt="Siegel Family Endowment" />
+					<img width="300px" src="/knight-foundation-logo.png" />
+					<img width="280px" src="/alfred-p-sloan-logo.png" alt="Alfred P. Sloan Foundation" title="Alfred P. Sloan Foundation" />
+					<img src="/coko-foundation.png" alt="Collaborative Knowledge Foundation" />
+					<img width="300px" src="/protocol-labs-logo.png" alt="Protocol Labs" />
+				</div>
+
+				<h2>Group Members</h2>
+				<div class="people">
+					<div class="person">
+						<img src="catherine.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">Catherine Ahearn</p>
+							<p class="title"></p>
+						</div>
+					</div>
+
+					<div class="person">
+						<img src="amy.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">Amy Brand</p>
+							<p class="title">Director, MIT Press</p>
+						</div>
+					</div>
+
+					<div class="person">
+						<img src="terry.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">Terry Ehling</p>
+							<p class="title"></p>
+						</div>
+					</div>
+
+					<div class="person">
+						<img src="joel.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">Joel Gustafson</p>
+							<p class="title">Protocol Labs</p>
+						</div>
+					</div>
+
+					<div class="person">
+						<img src="joi.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">Joi Ito</p>
+							<p class="title">Director, MIT Media Lab</p>
+						</div>
+					</div>
+
+					<div class="person">
+						<img src="danny.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">Danny Hillis</p>
+							<p class="title">MIT Media Lab & Applied Minds, LLC</p>
+						</div>
+					</div>
+
+					<div class="person">
+						<img src="sj.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">SJ Klein</p>
+							<p class="title"></p>
+						</div>
+					</div>
+
+					<div class="person">
+						<img src="travis.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">Travis Rich</p>
+							<p class="title"></p>
+						</div>
+					</div>
+
+					<div class="person">
+						<img src="gabe.jpeg" class="avatar">
+						<div class="info">
+							<p class="name">Gabe Stein</p>
+							<p class="title"></p>
+						</div>
+					</div>
+				</div>
+
+			<!-- <h2>Affiliates</h2>
+			<div class="people">
+				<div class="person">
+					<img src="catherine.jpeg" class="avatar">
+					<div class="info">
+						<p class="name">Joi Ito</p>
+						<p class="title">Director, MIT Media Lab</p>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="image-grid mit">
+			<img src="/medialab-logo-500.png" alt="MIT Media Lab">
+			<img src="/mitpress-logo-500.png" alt="The MIT Press">
 		</div>
-		<div class="header">
-			<img src="/logo.png" alt="Knowledge Futures Group Logo" />
-		</div>
-		<div class="fixed-middle"><div class="rich-text">
-<p>The integrity of knowledge creation – and, with it, how we make sense of the world – 
-depends on how effectively we can combat the spread of misinformation and democratize access to trustworthy, 
-verifiable sources of information to stimulate progress in all areas of human activity.
-	Open access to research information is of fundamental importance in this democratization effort, 
-	as is the commitment on the part of research and publishing communities to peer review and other methods of 
-	promoting the trustworthiness and reproducibility of research outputs. At the same time, we must devise smarter, 
-	more fool-proof ways of filtering for truth and discerning the provenance of the information we consume.</p>
+	<div class="background-wrapper bottom">
+		<div class="background"></div>
+	</div>
 
-<p>The <strong>MIT Knowledge Futures Group</strong> (KFG) is a new joint initiative of the MIT Press and the MIT Media Lab 
-	and is supported by generous funding from Reid Hoffman, co-founder of LinkedIn and a member of the MIT Media Lab’s 
-	Advisory Council. <span style="line-height:115%"><span style="font-family:&quot;Times New Roman&quot;,serif"> </span></span> 
-The KFG’s mission is to transform research publishing from a closed, sequential process, into an open, community-driven one, 
-	by incubating and deploying open source technologies to support both rapid, open dissemination and a shared ecosystem 
-	for information review, provenance, and verification. The partnership is the first of its kind between an established
-	publisher and a world-class academic lab devoted to the design of future-facing technologies.</p>
-
-<p><br><a class="button--primary button--medium button--has-arrow" href="http://eepurl.com/dCXx0T" target="_blank">Subscribe to the KFG Newsletter</a><br>
-&nbsp;</p>
-
-<h3>Rationale</h3>
-In order for mission driven publishers to flourish into the future, it is imperative that we establish our own innovation pathways. 
-	At the same time, universities must assert greater ownership and influence over the ecosystems for sharing and 
-	verifying knowledge given how critical it is to their core mission. The development of open source alternatives 
-	to the stranglehold that a few commercial entities now have on not the markets for information, 
-	reputation systems, publishing technologies, and digital innovation will benefit the 
-	research community and the reading public alike.</p>
-
-<h3>Objective</h3>
-The KFG will serve as a test kitchen, incubator, and a staging platform for the development and launch of open source 
-	publishing technologies and aligned open access publications, staffed jointly by the Press and the Media Lab. 
-	The open source approach not only reduces the precarious dependency that most non-profit academic publishers 
-	have on costly outsourced technologies and a limited network of commercial vendors, but also provides a 
-	foundation for greater insourced experimentation and innovation. We are seeking funding partners to help us 
-	strengthen our capacity over the next two to three years, as we develop models that will make the group's work
-	self-sustaining.</p>
-
-<h3>Partnership</h3>
-The MIT Press and the Media Lab have a long history of collaboration, beginning with renowned designer 
-		<a href="https://mitpress.mit.edu/books/muriel-cooper">Muriel Cooper</a>, 
-	who was the Press’ first art director and later a founding faculty member of the Media Lab. Both Press and Lab 
-	reflect the values of MIT, an institution that places a premium on experimentation, invention, and open 
-	information access. Since its launch in 1962, the MIT Press has been changing the rules of engagement between 
-	academic authors and their readers. The Press was one of the first publishers to exploit the potential of the 
-	Internet, producing open access interactive books as early as the mid-1990s. From its inception in 1985, the 
-	Media Lab was at the vanguard of the technology that enabled the digital revolution and enhanced human expression. 
-	Now in its fourth decade, the Lab continues to check traditional disciplines at the door as designers, 
-	nanotechnologists, data visualization experts, biologists, and computer interface pioneers work side by side to 
-	reinvent the human-technology relationship.</p>
-
-<p></p>
-<h3>CURRENT PROJECTS</h3>
-
-<p><a href="https://pubpub.org" target="_blank">PubPub</a>&nbsp;(<a href="http://eepurl.com/dyRqBr" target="_blank">stay in touch</a>)</p>
-
-<p>PubPub is an open authoring and publishing platform initially developed as a Media Lab project. 
-It socializes the process of knowledge creation by integrating conversation, annotation, and versioning into short and long-form digital publication. 
-Among the books now on PubPub is <a href="https://www.frankenbook.org/" title="Frankenbook">Frankenbook</a>, an interactive edition of Frankenstein: Annotated for Scientists, Engineers, and Creators of All Kinds (MIT Press, 2017). 
-Community contributed annotations on the platform live alongside multimedia elements and a series of essays; classrooms and reading groups are encouraged to create their own digital edition to host private discussions and manage assignments. 
-Also on PubPub is the <a href="https://jods.mitpress.mit.edu/" title="The Journal of Design and Science">Journal of Design and Science</a> (JoDS), 
-which forges new connections between science and design and breaks down the barriers between traditional academic disciplines. 
-We see JoDS as a node in a global network of online debate and discussion rooted in the Media Lab’s research and design ethos.</p>
-
-<p><a href="https://underlay.mit.edu/" target="_blank" title="The Underlay">The Underlay Project</a>&nbsp;(<a href="http://eepurl.com/dH-XLT" target="_blank">stay in touch</a>)</p>
-
-<p>The Underlay is a planned protocol and set of tools to connect and archive publicly available knowledge, and its provenance. 
-The Underlay provides mechanisms for distilling a knowledge graph from open publications, for instance making the data 
-and content hosted on PubPub broadly archived and available to other platforms.
-One project using the Underlay is the <a href="https://www.priorartarchive.org/about">Prior Art Archive</a>, a public archive of prior art with machine-readable metadata,
-hosted by MIT and indexed by Google Patents.   	
-</p>
-<p>&nbsp;</p>
-	
-<h3><strong>Our efforts are supported by:</strong></h3>
-
-<table border="0" cellpadding="1" cellspacing="1"><tbody><tr><td>
-		<article class="embedded-entity"><img src="/Siegel_Family_Endowment.png" width="180px" alt="Siegel Family Endowment"></article></td>
-	<td>
-		<article class="embedded-entity"><img width="300px" src="/knight-foundation-logo.png"></article></td>
-	<td>
-		<article class="embedded-entity"><img width="280px" src="/alfred-p-sloan-logo.png" alt="Alfred P. Sloan Foundation" title="Alfred P. Sloan Foundation"></article></td>
-	</tr><tr>
-	<td>
-		<article class="embedded-entity"><img src="/coko-foundation.png" alt="Collaborative Knowledge Foundation"></article></td>
-	<td>&nbsp;</td>
-	<td>
-		<article class="embedded-entity"><img width="300px" src="/protocol-labs-logo.png" alt="Protocol Labs"></article></td>
-	<td>&nbsp;</td>
-	</tr></tbody></table>
-<p>&nbsp;</p>
-
-<h3><strong>Members of the Group:</strong></h3>
-
-<p><strong>Catherine Ahearn</strong> 
-
-<p><strong>Amy Brand</strong> Director, MIT Press</p>
-
-<p><strong>Terry Ehling</strong><br>
-
-<p><strong>Joel Gustafson</strong> Protocol Labs</p>
-
-<p><strong>Joi Ito</strong> Director, Media Lab</p>
-
-<p><strong>Danny Hills</strong> Media Lab &amp; Applied Minds, LLC</p>
-
-<p><strong>SJ Klein&nbsp;</strong> 
-
-<p><strong>Travis Rich</strong> 
-
-<p><strong>Gabe Stein</strong> 
-
-<p>&nbsp;</p>
-
-<table align="left" border="0" cellpadding="5" cellspacing="5" bgcolor="white"><tbody>
-	<tr bgcolor="white"><td>
-			<article class="embedded-entity"><img src="/medialab-logo-500.png" width=200px alt="MIT Media Lab"></article></td>
-			<td>
-			<article class="embedded-entity"><img src="/mitpress-logo-500.png" width=200px alt="The MIT Press"></article></td>
-		</tr></tbody></table><p>&nbsp;</p>
-<p>&nbsp;</p>
-	
-    </div>
-  </div>
-	
 	</body>
 </html>
